@@ -6,6 +6,13 @@ button {
 	font-family: 'Montserrat', sans-serif;
 }
 
+body {
+	background-image: url('/img/background.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
 .content {
 	width: 330px;
 	padding: 40px 30px;
@@ -14,9 +21,10 @@ button {
 	box-shadow: -3px -3px 7px #ffffff73,
 		2px 2px 5px rgba(94, 104, 121, 0.288);
 	margin: 70px auto;
+	border: 2px solid white;
 }
 
-.content .text {
+.content .title {
 	font-size: 33px;
 	font-weight: 600;
 	margin-bottom: 35px;
@@ -30,7 +38,11 @@ button {
 	position: relative;
 }
 
-.field:nth-child(2) {
+.hidden {
+	display: none;
+}
+
+.field:not(:first-child) {
 	margin-top: 20px;
 }
 
@@ -111,17 +123,17 @@ button {
 		inset -5px -5px 10px #ffffff73;
 }
 
-.sign-up {
+.signUpDiv, .signInDiv {
 	margin: 10px 0;
 	color: #595959;
 	font-size: 16px;
 }
 
-.sign-up a {
+.signUpDiv a, .signInDiv a {
 	color: #3498db;
 	text-decoration: none;
 }
 
-.sign-up a:hover {
+.signUpDiv a:hover .signInDiv a:hover {
 	text-decoration: underline;
 }
